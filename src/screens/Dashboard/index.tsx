@@ -23,7 +23,7 @@ import {
 
 export function Dashboard(){
 
-    const data =[ {
+    const data: DataListProps[] =[ {
         id: '1',
         type: 'positive',
         title: "Desenvolvimento de site",
