@@ -16,6 +16,7 @@ import { CategorySelectButton } from '../../components/Form/CategorySelectButton
 import { InputForm } from '../../components/Form/InputForm';
 import { TransactionTypeButton } from '../../components/Form/TransactionTypeButton';
 import { CategorySelect } from '../CategorySelect';
+
 import {
   Container,
   Header,
@@ -38,6 +39,7 @@ const schema = yup.object().shape({
   .number()
   .typeError('informe um valor numérico')
   .positive('o valor não pode ser negativo')
+  .required('O valor é obrigatório'),
 })
 
 export function Register() {
